@@ -1,0 +1,62 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 39,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X3yC2UsDw35U",
+        "outputId": "75c0edb9-6770-4792-ea98-ea622d1362c8"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dame tu calificacion 5\n",
+            "Dame tu calificacion 8\n",
+            "Dame tu calificacion 8.9\n",
+            "Dame tu calificacion 8.5\n",
+            "Dame tu calificacion 9\n",
+            "Dame tu calificacion 10\n",
+            "Dame tu calificacion 10\n",
+            "Dame tu calificacion 5\n",
+            "Dame tu calificacion 5\n",
+            "Dame tu calificacion 6\n",
+            "estos son los que tienen mayor promedio de 8.5 son:  [8.9, 8.5, 9.0, 10.0, 10.0]\n"
+          ]
+        }
+      ],
+      "source": [
+        "calif=[]\n",
+        "def leer (calif):\n",
+        "  for i in range(10):\n",
+        "    calif.append(float(input(\"Dame tu calificacion \" )))\n",
+        "def promedio (calif):\n",
+        "  prom=[]\n",
+        "  for i in (calif):\n",
+        "      if  (i>=8.5):\n",
+        "        prom.append(i)\n",
+        "  return prom\n",
+        "leer (calif)\n",
+        "print(\"estos son los que tienen mayor promedio de 8.5 son: \",promedio(calif))"
+      ]
+    }
+  ]
+}
